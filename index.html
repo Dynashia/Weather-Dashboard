@@ -3,20 +3,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+
     <title>Weather Dashboard</title>
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <center>    
-    <h1 id="Para1">Weather Dashboard</h1>
+    <h1>Weather Dashboard</h1>
 </center>  
-<p id="inputContainer">Search for a City: <input type="text" id="cityInput"></p>
-<button>Click Here</button>
-
-    <div id="weatherContainer">
-        <div class="icons">
-            <p class="weather" id="day1"></p>
-            <div class="image"><img src="clouds.jpg" class="imgClass" id="img1" alt=""></div>
+<div class="container">
+<div class="weather-input">
+<h3>Enter City</h3>
+<input type="text" placeholder="Orlando, Miami, Texas">
+<button class="search-btn">Search</button>
+<div class="separator"></div>
+<button class="location-btn">Current Location</button>
+</div>
+    <div id="weather-info">
+        <div class="current-weather">
+        <div class="details">
+            <h2>Orlando</h2>
+            <h4>Temperature</h4>
+            <h4>Wind</h4>
+            <h4>Humidity</h4>
+        </div>
+          
+            <img src="clouds.jpg"  id="img1" alt="">
         </div>
     </div>
 
